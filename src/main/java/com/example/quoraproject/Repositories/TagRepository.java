@@ -1,4 +1,9 @@
 package com.example.quoraproject.Repositories;
 
-public interface TagRepository {
+import com.example.quoraproject.Models.Tag;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TagRepository extends JpaRepository<Tag, Long> {
 }
